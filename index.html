@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+</body>
+
+</html>
+
+<script>
+    let suhuCelcius = prompt('Please enter the celcius value')
+
+    let suhuFahrenheit = 9 / 5 * suhuCelcius + 32
+
+    let num = parseFloat(suhuCelcius)
+
+
+
+    if (isNaN(num)) {
+        alert('Invalid (Cannot use letter, number only)')
+        console.log('error (Detected character letter, number only)')
+    } else {
+        document.getElementById("demo").innerHTML = "merubah nilai celcius berikut " + suhuCelcius + "&#8451;" + "= " + suhuFahrenheit + "&#8457;";
+        console.log(suhuCelcius + " derajat celsius sama dengan " + suhuFahrenheit + " derajat celsius")
+    }
+</script>
