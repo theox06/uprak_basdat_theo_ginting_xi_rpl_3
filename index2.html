@@ -10,11 +10,12 @@
 </body>
 <script>
     let character = ["****", "****", "****", "****"];
+
     let text = "";
     for (let i = 0; i < character.length; i++) {
         text += character[i];
     }
     document.getElementById("demo").innerHTML = character.join(" ");
-    console.log(`${character.join(" ")}`)
+        console.log(`${character.join("\n")}`)
 </script>
 </html>
